@@ -1,0 +1,149 @@
+*{
+    padding:0;
+    margin:0;
+    font-size:14px;
+    box-sizing: border-box;
+    font-family: 'arimo', sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff6ed;
+    min-height: 100vh;
+}
+
+.page{
+    width:360px;
+    min-height: 400px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 18px 25px 10px 25px;
+    box-shadow:15px 20px 50px rgba(0,0,0,0.15);
+    position: relative;
+    transition: 0.4 s ease;
+}
+.page.change{
+    box-shadow: 0 40px 50px rgba(0,0,0,0.15);
+}
+.page .above{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page .above .userInform{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.page .above .userInform .profile {
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.page .above .userInform h3{
+    font-size: 16px;
+    color: #4d4d4f;
+    font-weight: 400;
+    line-height: 1em;
+}
+.page .above .userInform h3:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.page .above .userInform h3 span{
+    font-size: 0.75em;
+}
+.page .above i:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+.mainPics{
+    position: relative;
+    width: 100%;
+    height:340px;
+    margin:5px 0 15px;
+}
+.post{
+    width:100%;
+    height: 100%;
+}
+.theButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.theButtons *{
+    transition: 0.2s ease;
+}
+.theButtons i{
+    max-width: 25px;
+    transform: scale(1.2,1.2);
+    margin-right: 7px;
+}
+.theButtons i:hover{
+    transform: scale(1.1,1.1);
+}
+.likes{
+    color: black;
+}
+.captions{
+    font-weight: 400;
+    color: #777;
+    line-height: 1.5em;
+}
+.captions b{
+    color: #262626;
+}
+.cell {
+    font-weight: 400;
+    color: #777;
+    line-height: 1.5em;
+}
+.cell b{
+    color: #262626;
+}
+.comments{
+    margin-top: 3px;
+    font-weight: 400;
+    color: rgb(172,170,170);
+}
+.comments:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+.add_a_comment{
+    display:flex;
+    align-items:center;
+    margin-top: 5px;
+}
+.add_a_comment img{
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+  
+}
+.theComment{
+    width: 100%;
+    border:none;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #262626;
+}
+.theComment ::placeholder{
+    color:#777;
+}
+.time{
+    margin-top: 5px;
+    font-weight: 400;
+    color: rgb(172,170,170);
+    font-size: 11px;
+}
